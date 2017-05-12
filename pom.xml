@@ -4,7 +4,7 @@
 
     <groupId>com.github.xuzw</groupId>
     <artifactId>ui-engine-sdk</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
 
     <name>ui-engine-sdk</name>
@@ -38,7 +38,7 @@
         <dependency>
             <groupId>com.github.xuzw</groupId>
             <artifactId>ui-engine-runtime</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>org.testng</groupId>
