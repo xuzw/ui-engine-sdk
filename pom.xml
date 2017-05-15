@@ -4,11 +4,18 @@
 
     <groupId>com.github.xuzw</groupId>
     <artifactId>ui-engine-sdk</artifactId>
-    <version>1.0.8</version>
+    <version>${ui-engine-runtime.version}</version>
     <packaging>jar</packaging>
 
     <name>ui-engine-sdk</name>
     <url>http://maven.apache.org</url>
+
+    <properties>
+        <ui-engine-runtime.version>1.0.8</ui-engine-runtime.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+    </properties>
 
     <build>
         <plugins>
@@ -38,7 +45,7 @@
         <dependency>
             <groupId>com.github.xuzw</groupId>
             <artifactId>ui-engine-runtime</artifactId>
-            <version>1.0.8</version>
+            <version>${ui-engine-runtime.version}</version>
         </dependency>
         <dependency>
             <groupId>org.testng</groupId>
