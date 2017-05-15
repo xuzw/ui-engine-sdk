@@ -1,5 +1,6 @@
 package com.github.xuzw.ui_engine_sdk;
 
+import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -19,7 +20,9 @@ public class ScriptGeneratorUtils {
     private static final Charset encoding = Charset.forName("utf8");
 
     public static void updateScriptFile(String path) throws IOException {
-        OutputStream output = new FileOutputStream(path);
+        File file = new File(path);
+        file.getParentFile().mkdirs();
+        OutputStream output = new FileOutputStream(file);
         IOUtils.write(String.format("/* GenerateBy UiEngineSdk %s */\n", _buildTime()), output, encoding);
         InputStream input = UiEngine.class.getResourceAsStream("/com/github/xuzw/ui_engine_runtime/script/ui-engine.js");
         IOUtils.copy(input, output);

@@ -70,6 +70,7 @@ public class StyleGeneratorUtils {
 
     private static void updateCssFile(String folder, String name, Style style) throws IOException {
         File file = new File(folder, name + ".css");
+        file.getParentFile().mkdirs();
         OutputStream output = new FileOutputStream(file);
         StringBuffer sb = new StringBuffer();
         sb.append(String.format("/* GenerateBy UiEngineSdk %s */", _buildTime())).append("\n");

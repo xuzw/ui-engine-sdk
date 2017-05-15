@@ -4,7 +4,7 @@
 
     <groupId>com.github.xuzw</groupId>
     <artifactId>ui-engine-sdk</artifactId>
-    <version>${ui-engine-runtime.version}</version>
+    <version>${ui-engine-runtime.version}.r1</version>
     <packaging>jar</packaging>
 
     <name>ui-engine-sdk</name>
